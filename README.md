@@ -2,7 +2,11 @@
 
 Nim library for generating "lorem ipsum" text
 
-## Example
+## Documentation
+
+<https://neroist.github.io/lorem/>
+
+## Examples
 
 ### Word
 
