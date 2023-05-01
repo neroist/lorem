@@ -1,0 +1,8 @@
+word	lorem.html#word	lorem: word(): string	
+lorem	lorem.html#lorem	lorem: lorem(): string	
+sentence	lorem.html#sentence,int,char	lorem: sentence(length: int = rand(5 .. 20); end: char = &apos;.&apos;): string	
+sentence	lorem.html#sentence,Slice,char	lorem: sentence(length: Slice; end: char = &apos;.&apos;): string	
+paragraph	lorem.html#paragraph,int,int	lorem: paragraph(length: int = rand(1 .. 7); indent: int = 4): string	
+paragraph	lorem.html#paragraph,Slice,int	lorem: paragraph(length: Slice; indent: int = 4): string	
+essay	lorem.html#essay,int,int	lorem: essay(length: int = rand(3 .. 8); paragraphLength: int | Slice = rand(2 .. 7);\n      indent: int = 4): string	
+essay	lorem.html#essay,Slice,int	lorem: essay(length: Slice; paragraphLength: int | Slice = rand(2 .. 7);\n      indent: int = 4): string	
