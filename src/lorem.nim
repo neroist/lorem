@@ -31,10 +31,10 @@ proc sentence*(length: int = rand(5..20); `end`: char = '.'): string =
     if i != length:
       if fun >= 191: # 4.5% chance
         lst.add ", "
-      elif fun <= 5: # 2.5% chance
+      elif fun <= 3: # 1.5% chance
         lst.add "; "
       elif fun <= 1: # 0.5% chance
-        lst.add "—"
+        lst.add "—" # em dash
       else:
         lst.add " "
 
@@ -101,3 +101,5 @@ proc essay*(length: Slice; paragraphLength: int | Slice = rand(2..7); indent: in
   ## :indent: How much to indent each paragraph, in spaces. 
 
   essay(rand(length), paragraphLength, indent)
+
+echo essay()
