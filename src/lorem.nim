@@ -101,5 +101,3 @@ proc essay*(length: Slice; paragraphLength: int | Slice = rand(2..7); indent: in
   ## :indent: How much to indent each paragraph, in spaces. 
 
   essay(rand(length), paragraphLength, indent)
-
-echo essay()
